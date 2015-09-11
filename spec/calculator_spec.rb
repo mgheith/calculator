@@ -24,4 +24,15 @@ describe Calculator do
     end
   end
   
+  describe "#sub" do
+    it "returns an integer" do
+      expect(calc.sub 1, 1).to be_an Integer
+    end
+	
+	context "When subtracting zero from a integer" do
+		it "returns the integer" do
+			expect(calc.sub 1, 0).to eq 1
+		end
+	end
+  end 
 end
