@@ -1,0 +1,33 @@
+Feature: Subtraction
+	As a programmer
+	I want to make a custom Calculator
+	That can properly subtract numbers
+	
+Scenario: Subtracting 2 integers
+	Given I have 2 integers
+	When I subtract 2 integers
+	Then an integer is returned
+	
+Scenario: Subtracting with 2 different integers	
+	Given I have 2 integers
+	When I subtract the 2 integers
+	Then the first number is subtracted by the second
+	
+Scenario: Subtracting with Zero as a number
+	Given I have zero as 1 of 2 integers
+	When I subtract Zero from the first integer
+	Then I will get the integer back
+	
+Scenario: Subtracting an integer by itself
+	Given I have 2 of the same integer
+	When I subtract the integers
+	Then the subtraction will equal zero
+	
+Scenario: Subtracting with more than 2 numbers
+	Given I have 3 integers
+	When I subtract these 3 numbers
+	Then it will produce the sum difference
+	
+	
+	
+	

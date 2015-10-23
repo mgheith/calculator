@@ -35,9 +35,4 @@ describe Calculator do
 		end
 	end
   end 
-  describe "#mlt" do
-   it "returns an integer" do
-		expect(calc.mlt 2,3 ).to be_an Integer
-   end
-  end
 end
